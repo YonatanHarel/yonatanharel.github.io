@@ -1,4 +1,7 @@
 import React from "react";
+import healthcareImg from "./assets/healthcare.png";
+import externalSortImg from "./assets/externalsort.png";
+import agenticAiImg from "./assets/agentic-ai.png"
 
 const projects = [
   {
@@ -7,6 +10,8 @@ const projects = [
       "A Python-based project for exploring and processing healthcare-related datasets with a focus on data quality, validation, and basic analytics.",
     tech: ["Python", "Pandas", "Pydantic", "NumPy"],
     github: "https://github.com/YonatanHarel/HealthCare",
+    image: healthcareImg,
+    imageAlt: "CT/MRI style healthcare illustration"
   },
   {
     title: "External Sort – Large-Scale Sorting",
@@ -14,13 +19,17 @@ const projects = [
       "An external sorting implementation in Java and Python designed to handle datasets that don't fit into memory, using file-based chunking and merge strategies.",
     tech: ["Java", "Python", "Algorithms"],
     github: "https://github.com/YonatanHarel/ExternalSort",
+    image: externalSortImg,
+    imageAlt: "Illustration of files and sorting arrows"
   },
   {
     title: "Agentic AI – Mini Projects & Demos",
     description:
       "A collection of mini-projects and demos built while following 'The Complete Agentic AI Engineering Course' by Ed Donner, experimenting with agentic patterns and orchestration.",
-    tech: ["Python", "OpenAI SDK", "CrewAI", "Syncio", "LLMs"],
+    tech: ["Python", "OpenAI SDK", "CrewAI", "Asyncio", "LLMs", "MCP"],
     github: "https://github.com/YonatanHarel/Agentic-AI",
+    image: agenticAiImg,
+    imageAlt: "Abstract AI/agent network illustration"
   },
 ];
 
@@ -93,35 +102,41 @@ function App() {
           </p>
 
           <div className="projects-grid">
-            {projects.map((project) => (
-              <article key={project.title} className="project-card">
-                <div>
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                  <ul className="project-tags">
-                    {project.tech.map((tag) => (
-                      <li key={tag}>{tag}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="project-links">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                  >
-                    View on GitHub ↗
-                  </a>
-                  {/* If you ever add demos, you can add another link here:
-                  <a href="https://demo-url" target="_blank" rel="noreferrer" className="project-link">
-                    Live Demo ↗
-                  </a>
-                  */}
-                </div>
-              </article>
-            ))}
-          </div>
+  {projects.map((project) => (
+    <article key={project.title} className="project-card">
+      {project.image && (
+        <div className="project-media">
+          <img
+            src={project.image}
+            alt={project.imageAlt || project.title}
+            className="project-image"
+          />
+        </div>
+      )}
+
+      <div>
+        <h3 className="project-title">{project.title}</h3>
+        <p className="project-description">{project.description}</p>
+        <ul className="project-tags">
+          {project.tech.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="project-links">
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noreferrer"
+          className="project-link"
+        >
+          View on GitHub ↗
+        </a>
+      </div>
+    </article>
+  ))}
+</div>
         </section>
 
         <section id="skills" className="section section-alt">
