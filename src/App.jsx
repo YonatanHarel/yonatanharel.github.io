@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTop from "./components/BackToTop";
 import healthcareImg from "./assets/healthcare.png";
 import externalSortImg from "./assets/externalsort.png";
 import agenticAiImg from "./assets/agentic-ai.png"
@@ -54,6 +55,7 @@ function App() {
           <div className="nav-links">
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
             <a
               href="https://github.com/YonatanHarel"
@@ -152,6 +154,171 @@ function App() {
             ))}
           </ul>
         </section>
+        
+        <section id="resume" className="section">
+          <h2 className="section-title">Resume</h2>
+          <p className="section-intro">
+            A concise overview of my background, experience, and education.
+          </p>
+
+          <div className="resume-grid">
+            {/* Left column – Summary & Contact */}
+            <div className="resume-column">
+              <div className="resume-card">
+                <h3 className="resume-heading">Summary</h3>
+                <p className="resume-text">
+                  Software developer with a strong interest in data processing,
+                  backend systems, and AI/agentic architectures. Experienced
+                  with Python, Java, and modern tooling around large language
+                  models and automation. Curious, detail-oriented, and focused
+                  on writing clear, maintainable code.
+                </p>
+              </div>
+
+              <div className="resume-card">
+                <h3 className="resume-heading">Core Skills</h3>
+                <ul className="resume-list">
+                  <li>Python, Java, JavaScript / TypeScript</li>
+                  <li>Data processing, ETL, Pandas, NumPy</li>
+                  <li>REST APIs, backend services</li>
+                  <li>Agentic AI, LLM orchestration, OpenAI SDK</li>
+                  <li>Testing, debugging, and performance awareness</li>
+                </ul>
+              </div>
+
+              <div className="resume-card">
+                <h3 className="resume-heading">Contact</h3>
+                <p className="resume-text">
+                  <strong>Email:</strong> you@example.com
+                  <br />
+                  <strong>GitHub:</strong>{" "}
+                  <a
+                    href="https://github.com/YonatanHarel"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="resume-link"
+                  >
+                    github.com/YonatanHarel
+                  </a>
+                </p>
+                <p className="resume-note">
+                  (Replace <code>you@example.com</code> with your real address.)
+                </p>
+              </div>
+            </div>
+
+            {/* Right column – Experience & Education */}
+            <div className="resume-column">
+              <div className="resume-card">
+                <h3 className="resume-heading">Experience</h3>
+
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <span className="resume-item-title">
+                      Software Projects & Self-Driven Learning
+                    </span>
+                    <span className="resume-item-dates">
+                      20XX – Present
+                    </span>
+                  </div>
+                  <p className="resume-item-subtitle">
+                    Personal projects in data processing, algorithms, and AI.
+                  </p>
+                  <ul className="resume-list">
+                    <li>
+                      Built <strong>HealthCare</strong> data project using
+                      Python, Pandas, Pydantic, and NumPy to explore and clean
+                      healthcare datasets.
+                    </li>
+                    <li>
+                      Implemented <strong>External Sort</strong> in Java and
+                      Python to handle large datasets that do not fit into
+                      memory.
+                    </li>
+                    <li>
+                      Experimented with <strong>Agentic AI</strong> setups using
+                      the OpenAI SDK, CrewAI, Syncio and related tools while
+                      following agentic AI engineering best practices.
+                    </li>
+                  </ul>
+                </div>
+
+                {/* הוסף כאן ניסיון עבודה אמיתי כשיהיה */}
+                <div className="resume-item resume-item-placeholder">
+                  <div className="resume-item-header">
+                    <span className="resume-item-title">
+                      [Your Job Title / Role]
+                    </span>
+                    <span className="resume-item-dates">
+                      [Dates, e.g. 2023 – Present]
+                    </span>
+                  </div>
+                  <p className="resume-item-subtitle">[Company / Organization]</p>
+                  <ul className="resume-list">
+                    <li>[Responsibility or achievement #1]</li>
+                    <li>[Responsibility or achievement #2]</li>
+                    <li>[Responsibility or achievement #3]</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="resume-card">
+                <h3 className="resume-heading">Education</h3>
+
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <span className="resume-item-title">
+                      [Degree / Program Name]
+                    </span>
+                    <span className="resume-item-dates">
+                      [Years, e.g. 2019 – 2023]
+                    </span>
+                  </div>
+                  <p className="resume-item-subtitle">
+                    [University / College / Bootcamp]
+                  </p>
+                  <p className="resume-text">
+                    Short description of your studies, areas of focus, or
+                    notable projects.
+                  </p>
+                </div>
+
+                <div className="resume-item">
+                  <div className="resume-item-header">
+                    <span className="resume-item-title">
+                      The Complete Agentic AI Engineering Course
+                    </span>
+                    <span className="resume-item-dates">
+                      Udemy – Ed Donner
+                    </span>
+                  </div>
+                  <p className="resume-text">
+                    Followed a hands-on course on agentic AI engineering,
+                    including building multi-step agents, tool use, and
+                    orchestration patterns with LLMs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Optional: Add a PDF download button once you have a file */}
+          <div className="resume-download">
+            <p className="resume-note">
+              Once you have a PDF version of your CV, you can place it in the
+              project (for example under <code>public/cv.pdf</code>) and link it
+              here:
+            </p>
+            <a
+              className="btn btn-ghost"
+              href="/cv.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download CV (PDF)
+            </a>
+          </div>
+        </section>
 
         <section id="contact" className="section">
           <h2 className="section-title">Contact</h2>
@@ -191,6 +358,7 @@ function App() {
           deployed via GitHub Pages.
         </p>
       </footer>
+      <BackToTop />
     </div>
   );
 }

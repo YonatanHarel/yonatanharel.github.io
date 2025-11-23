@@ -265,6 +265,112 @@ body {
   color: var(--text);
 }
 
+/* Resume */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.resume-column {
+  display: grid;
+  /* flex-direction: column; */
+  gap: 1.2rem;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.resume-card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1.1rem;
+  border: 1px solid var(--border);
+  padding: 1.4rem 1.5rem;
+}
+
+.resume-heading {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+}
+
+.resume-text {
+  margin: 0 0 0.6rem;
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.resume-list {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.resume-list li + li {
+  margin-top: 0.3rem;
+}
+
+.resume-item {
+  margin-bottom: 1rem;
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: baseline;
+  margin-bottom: 0.1rem;
+}
+
+.resume-item-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.resume-item-dates {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.resume-item-subtitle {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.resume-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.6rem;
+}
+
+.resume-link {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.resume-item-placeholder {
+  opacity: 0.8;
+}
+
+.resume-download {
+  margin-top: 2rem;
+  text-align: center;
+  visibility: hidden;
+}
+
+/* Responsive for resume */
+@media (max-width: 800px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Contact */
 
 .contact-box {
@@ -295,6 +401,37 @@ body {
 .contact-note code {
   font-family: monospace;
 }
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.9); /* כחול עדין */
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 9999;
+}
+
+.back-to-top:hover {
+  transform: scale(1.12);
+  background: rgba(59, 130, 246, 1);
+}
+
 
 /* Footer */
 
