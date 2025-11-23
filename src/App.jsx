@@ -6,7 +6,7 @@ import agenticAiImg from "./assets/agentic-ai.png"
 
 const projects = [
   {
-    title: "HealthCare – Handling Healthcare Data",
+    title: "HealthCARE – Handling Healthcare Data",
     description:
       "A Python-based project for exploring and processing healthcare-related datasets with a focus on data quality, validation, and basic analytics.",
     tech: ["Python", "Pandas", "Pydantic", "NumPy"],
