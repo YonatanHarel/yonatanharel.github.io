@@ -217,7 +217,7 @@
                       </a>
                     </p>
                     <p className="resume-note">
-                      (Replace <code>you@example.com</code> with your real address.)
+                      (yonatan.harel@mail.com)
                     </p>
                   </div>
                 </div>
