@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>[Your Name] – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-weight: 400;
+      color: #9ca3af;
+      margin-top: 0;
+    }
+    p {
+      max-width: 620px;
+      line-height: 1.5;
+    }
+    .cta-buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 0.8rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid #4b5563;
+      text-decoration: none;
+      color: #e5e7eb;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .btn-primary {
+      background: #3b82f6;
+      border-color: #3b82f6;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .project-card {
+      background: #111827;
+      border-radius: 1rem;
+      padding: 1.2rem 1.4rem;
+      border: 1px solid #1f2937;
+      display: flex;
+      flex-direction: column;
+      min-height: 180px;
+    }
+    .project-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+      color: #fff;
+    }
+    .project-tags {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 0.7rem;
+    }
+    .project-description {
+      font-size: 0.9rem;
+      margin-bottom: 0.7rem;
+    }
+    .project-links {
+      margin-top: auto;
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .project-links a {
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: #60a5fa;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #1f2937;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hello, I'm [Your Name] 👋</h1>
+  <h2>Full-Stack / Frontend / Backend Developer</h2>
+
+  <p>
+    I build modern web applications, focusing on clean code, intuitive UI/UX, 
+    and scalable architecture. I enjoy working with technologies like 
+    <strong>JavaScript, TypeScript, React, Node.js, and more.</strong>
+  </p>
+
+  <div class="cta-buttons">
+    <a class="btn btn-primary" href="#projects">View Projects</a>
+    <a class="btn" href="https://github.com/USERNAME" target="_blank">GitHub Profile</a>
+    <a class="btn" href="mailto:you@example.com">Contact Me</a>
+  </div>
+</header>
+
+<section id="projects">
+  <h3 class="section-title">Selected Projects</h3>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <article class="project-card">
+      <div>
+        <h4 class="project-title">Project One – Task Manager App</h4>
+        <div class="project-tags">React · TypeScript · LocalStorage</div>
+        <p class="project-description">
+          A task management application with filtering, search, 
+          and persistent local storage.
+        </p>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/USERNAME/PROJECT_ONE" target="_blank">GitHub</a>
+        <a href="https://USERNAME.github.io/PROJECT_ONE" target="_blank">Live Demo</a>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card">
+      <div>
+        <h4 class="project-title">Project Two – Analytics Dashboard</h4>
+        <div class="project-tags">Vue · Charts · API</div>
+        <p class="project-description">
+          A realtime dashboard that visualizes analytics data coming from an external API.
+        </p>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/USERNAME/PROJECT_TWO" target="_blank">GitHub</a>
+        <a href="#" target="_blank">Demo</a>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-card">
+      <div>
+        <h4 class="project-title">Project Three – REST API Server</h4>
+        <div class="project-tags">Node.js · Express · MongoDB</div>
+        <p class="project-description">
+          A complete user/task management API, including authentication.
+        </p>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/USERNAME/PROJECT_THREE" target="_blank">GitHub</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> [Your Name]. Built with GitHub Pages.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
