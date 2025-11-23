@@ -204,7 +204,7 @@
                   <div className="resume-card">
                     <h3 className="resume-heading">Contact</h3>
                     <p className="resume-text">
-                      <strong>Email:</strong> you@example.com
+                      <strong>Email:</strong> yonatan.harel@mail.com
                       <br />
                       <strong>GitHub:</strong>{" "}
                       <a
@@ -347,7 +347,7 @@
                   You can reach me via email or explore more of my work on GitHub.
                 </p>
                 <div className="contact-actions">
-                  <a className="btn btn-primary" href="mailto:you@example.com">
+                  <a className="btn btn-primary" href="mailto:yonatan.harel@mail.com">
                     Email me
                   </a>
                   <a
@@ -359,10 +359,10 @@
                     GitHub Profile
                   </a>
                 </div>
-                <p className="contact-note">
+                {/* <p className="contact-note">
                   (Replace <code>you@example.com</code> with your real address in
                   the code.)
-                </p>
+                </p> */}
               </div>
             </section>
           </main>
