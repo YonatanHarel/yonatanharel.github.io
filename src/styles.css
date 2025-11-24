@@ -568,7 +568,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    color: #3b82f6; /* כחול עדין */
+    color: #3b82f6;
     border-color: rgba(59, 130, 246, 0.5);
   }
   
