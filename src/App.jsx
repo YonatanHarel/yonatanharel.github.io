@@ -221,6 +221,21 @@
       A detailed overview of my professional background, technical expertise, and industry experience.
     </p>
 
+    <div className="resume-card" style={{ marginBottom: "2rem" }}>
+      <h3 className="resume-heading">Current Work & Focus</h3>
+      <p className="resume-text">
+        I am currently expanding my expertise in modern AI engineering and backend architecture. 
+        My primary focus is on agentic AI patterns, workflow automation, and the Model Context Protocol (MCP). 
+        I am experimenting with building end-to-end intelligent systems that combine LLMs, orchestration layers, 
+        and scalable backend components.
+        <br /><br />
+        Alongside my AI work, I’m continuing to refine my backend engineering skills by designing 
+        data-driven platforms, modernizing cloud architectures, and maintaining hands-on development 
+        with Python, Java, and Golang. 
+        I'm also actively building personal tools and utilities as part of my ongoing learning and experimentation.
+      </p>
+    </div>
+
     <div className="resume-grid">
 
       {/* LEFT COLUMN — SUMMARY + SKILLS + CONTACT */}
