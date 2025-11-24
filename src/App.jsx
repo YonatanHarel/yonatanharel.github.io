@@ -62,11 +62,14 @@
             const skills = [
               "Python",
               "Java",
-              "JavaScript / TypeScript",
+              "Cloud Architecture",
+              "Cloud Computing",
+              "Serverless",
               "Data Processing & ETL",
               "Pandas / NumPy",
               "APIs & Backend",
               "Agentic AI & LLMs",
+              "IaC"
             ];
 
             function App() {
