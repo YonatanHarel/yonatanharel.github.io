@@ -320,7 +320,7 @@
 
           <div className="resume-item">
             <div className="resume-item-header">
-              <span className="resume-item-title">CITADEL CONSULTING LTD. | Software Architect / Technical Lead</span>
+              <span className="resume-item-title">CITADEL CONSULTING LTD. | Hands On Software Architect / Technical Lead</span>
               <span className="resume-item-dates">Jul 2023 – Jan 2025</span>
             </div>
             <ul className="resume-list">
@@ -333,7 +333,7 @@
 
           <div className="resume-item">
             <div className="resume-item-header">
-              <span className="resume-item-title">SKF AI | Software Architect / Technical Lead</span>
+              <span className="resume-item-title">SKF AI | Hands On Software Architect / Technical Lead</span>
               <span className="resume-item-dates">Apr 2022 – Jul 2023</span>
             </div>
             <ul className="resume-list">
