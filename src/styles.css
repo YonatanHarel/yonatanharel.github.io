@@ -416,6 +416,7 @@ body {
 
 .resume-item-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 0.8rem;
   align-items: baseline;
@@ -428,6 +429,11 @@ body {
 }
 
 .resume-item-dates {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.resume-item-dates-inline {
   font-size: 0.8rem;
   color: var(--muted);
 }

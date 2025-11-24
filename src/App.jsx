@@ -1,118 +1,429 @@
-          import React from "react";
-          import BackToTop from "./components/BackToTop";
-          import healthcareImg from "./assets/healthcare.png";
-          import externalSortImg from "./assets/externalsort.png";
-          import agenticAiImg from "./assets/agentic-ai.png"
-          import awsBotoImg from "./assets/aws-python-boto3.webp"
-          import profileImg from "./assets/me.jpg"
+            import React from "react";
+            import BackToTop from "./components/BackToTop";
+            import healthcareImg from "./assets/healthcare.png";
+            import externalSortImg from "./assets/externalsort.png";
+            import agenticAiImg from "./assets/agentic-ai.png"
+            import awsBotoImg from "./assets/aws-python-boto3.webp"
+            import profileImg from "./assets/me.jpg"
 
 
-          const LinkedInIcon = () => (
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M4.98 3.5C4.98 4.604 4.104 5.5 3 5.5C1.896 5.5 1 4.604 1 3.5C1 2.396 1.896 1.5 3 1.5C4.104 1.5 4.98 2.396 4.98 3.5ZM5 7H1V23H5V7ZM8 7H12V9.1H12.06C12.63 8.057 14.02 6.94 16.2 6.94C21.06 6.94 22 9.97 22 14.14V23H18V15.07C18 12.88 17.96 10.16 15.12 10.16C12.24 10.16 12 12.54 12 14.9V23H8V7Z"/>
-            </svg>
-          );
+            const LinkedInIcon = () => (
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4.98 3.5C4.98 4.604 4.104 5.5 3 5.5C1.896 5.5 1 4.604 1 3.5C1 2.396 1.896 1.5 3 1.5C4.104 1.5 4.98 2.396 4.98 3.5ZM5 7H1V23H5V7ZM8 7H12V9.1H12.06C12.63 8.057 14.02 6.94 16.2 6.94C21.06 6.94 22 9.97 22 14.14V23H18V15.07C18 12.88 17.96 10.16 15.12 10.16C12.24 10.16 12 12.54 12 14.9V23H8V7Z"/>
+              </svg>
+            );
 
-          const projects = [
-            {
-              title: "HealthCare – Handling Healthcare Data",
-              description:
-                "A Python-based project for exploring and processing healthcare-related datasets with a focus on data quality, validation, and basic analytics.",
-              tech: ["Python", "Pandas", "Pydantic", "NumPy"],
-              github: "https://github.com/YonatanHarel/HealthCare",
-              image: healthcareImg,
-              imageAlt: "CT/MRI style healthcare illustration"
-            },
-            {
-              title: "AWS Cognito - Backup and Restore",
-              description:
-                "A utility for backing up and restoring AWS Cognito user pools, including users and configuration, using automation scripts and AWS APIs.",
-              tech: ["Python", "Boto3", "AWS Cognito", "AWS Lambda"],
-              github: "https://github.com/YonatanHarel/AWS-Cognito-backup-and-restore",
-              image: awsBotoImg,
-              imageAlt: "Illustration of files and sorting arrows"
-            },
-            {
-              title: "External Sort – Large-Scale Sorting",
-              description:
-                "An external sorting implementation in Java and Python designed to handle datasets that don't fit into memory, using file-based chunking and merge strategies.",
-              tech: ["Java", "Python", "Algorithms"],
-              github: "https://github.com/YonatanHarel/ExternalSort",
-              image: externalSortImg,
-              imageAlt: "Illustration of files and sorting arrows"
-            },
-            {
-              title: "Agentic AI – Mini Projects & Demos",
-              status: "WORK IN PROGRESS",
-              description:
-                "A collection of mini-projects and demos built while following 'The Complete Agentic AI Engineering Course' by Ed Donner, experimenting with agentic patterns and orchestration.",
-              tech: ["Python", "OpenAI SDK", "CrewAI", "Asyncio", "LLMs", "MCP"],
-              github: "https://github.com/YonatanHarel/Agentic-AI",
-              image: agenticAiImg,
-              imageAlt: "Abstract AI/agent network illustration"
-            },
-          ];
+            const projects = [
+              {
+                title: "HealthCare – Handling Healthcare Data",
+                description:
+                  "A Python-based project for exploring and processing healthcare-related datasets with a focus on data quality, validation, and basic analytics.",
+                tech: ["Python", "Pandas", "Pydantic", "NumPy"],
+                github: "https://github.com/YonatanHarel/HealthCare",
+                image: healthcareImg,
+                imageAlt: "CT/MRI style healthcare illustration"
+              },
+              {
+                title: "AWS Cognito - Backup and Restore",
+                description:
+                  "A utility for backing up and restoring AWS Cognito user pools, including users and configuration, using automation scripts and AWS APIs.",
+                tech: ["Python", "Boto3", "AWS Cognito", "AWS Lambda"],
+                github: "https://github.com/YonatanHarel/AWS-Cognito-backup-and-restore",
+                image: awsBotoImg,
+                imageAlt: "Illustration of files and sorting arrows"
+              },
+              {
+                title: "External Sort – Large-Scale Sorting",
+                description:
+                  "An external sorting implementation in Java and Python designed to handle datasets that don't fit into memory, using file-based chunking and merge strategies.",
+                tech: ["Java", "Python", "Algorithms"],
+                github: "https://github.com/YonatanHarel/ExternalSort",
+                image: externalSortImg,
+                imageAlt: "Illustration of files and sorting arrows"
+              },
+              {
+                title: "Agentic AI – Mini Projects & Demos",
+                status: "WORK IN PROGRESS",
+                description:
+                  "A collection of mini-projects and demos built while following 'The Complete Agentic AI Engineering Course' by Ed Donner, experimenting with agentic patterns and orchestration.",
+                tech: ["Python", "OpenAI SDK", "CrewAI", "Asyncio", "LLMs", "MCP"],
+                github: "https://github.com/YonatanHarel/Agentic-AI",
+                image: agenticAiImg,
+                imageAlt: "Abstract AI/agent network illustration"
+              },
+            ];
 
-          const skills = [
-            "Python",
-            "Java",
-            "JavaScript / TypeScript",
-            "Data Processing & ETL",
-            "Pandas / NumPy",
-            "APIs & Backend",
-            "Agentic AI & LLMs",
-          ];
+            const skills = [
+              "Python",
+              "Java",
+              "JavaScript / TypeScript",
+              "Data Processing & ETL",
+              "Pandas / NumPy",
+              "APIs & Backend",
+              "Agentic AI & LLMs",
+            ];
 
-          function App() {
-            return (
-              <div className="page">
-                <header className="hero" id="top">
-                  <nav className="navbar">
-                    <a href="#top" className="logo">
-                      YH
-                    </a>
-                    <div className="nav-links">
-                      <a href="#projects">Projects</a>
-                      <a href="#skills">Skills</a>
-                      <a href="#resume">Resume</a>
-                      <a href="#contact">Contact</a>
-                      <a
-                        href="https://github.com/YonatanHarel"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        GitHub
+            function App() {
+              return (
+                <div className="page">
+                  <header className="hero" id="top">
+                    <nav className="navbar">
+                      <a href="#top" className="logo">
+                        YH
                       </a>
-                    </div>
-                  </nav>
-
-
-                  <div className="hero-content">
-                    <div className="hero-left">
-                      <div className="hero-photo">
-                        <img src={profileImg} alt="Yonatan Harel" />
+                      <div className="nav-links">
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#resume">Resume</a>
+                        <a href="#contact">Contact</a>
+                        <a
+                          href="https://github.com/YonatanHarel"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          GitHub
+                        </a>
                       </div>
-                    </div>
-                    <div className="hero-right">
-                      <p className="hero-eyebrow">Software Developer & Data Enthusiast</p>
-                      <h1 className="hero-title">Hi, I'm Yonatan Harel 👋</h1>
-                      <p className="hero-subtitle">
-                        I enjoy solving problems at the intersection of{" "}
-                        <strong>software engineering</strong>,{" "}
-                        <strong>data processing</strong>, and{" "}
-                        <strong>AI/agentic systems</strong>. I like building clear,
-                        maintainable solutions and experimenting with new tools and
-                        architectures.
+                    </nav>
+
+
+                    <div className="hero-content">
+                      <div className="hero-left">
+                        <div className="hero-photo">
+                          <img src={profileImg} alt="Yonatan Harel" />
+                        </div>
+                      </div>
+                      <div className="hero-right">
+                        <p className="hero-eyebrow">Software Developer & Data Enthusiast</p>
+                        <h1 className="hero-title">Hi, I'm Yonatan Harel 👋</h1>
+                        <p className="hero-subtitle">
+                          I enjoy solving problems at the intersection of{" "}
+                          <strong>software engineering</strong>,{" "}
+                          <strong>data processing</strong>, and{" "}
+                          <strong>AI/agentic systems</strong>. I like building clear,
+                          maintainable solutions and experimenting with new tools and
+                          architectures.
+                        </p>
+                          <div className="hero-actions">
+                            <a className="btn btn-primary" href="#projects">
+                              View selected projects
+                            </a>
+                            <a
+                              className="btn btn-ghost"
+                              href="https://github.com/YonatanHarel"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Visit my GitHub
+                            </a>
+                            <a
+                            className="btn btn-ghost linkedin-btn"
+                            href="https://www.linkedin.com/in/yonatan-harel"
+                            target="_blank"
+                            rel="noreferrer"
+                          ><LinkedInIcon />LinkedIn
+                          </a>
+                          </div>
+                      </div>
+                      </div>
+                  </header>
+
+                  <main>
+                    <section id="intro" className="section section-alt">
+              <h2 className="section-title">Introduction</h2>
+              <p className="section-intro" style={{ maxWidth: "750px", margin: "0 auto" }}>
+              I'm a software developer passionate about building clean, scalable, and data-driven systems.
+          My work centers on backend engineering, data pipelines, and platform development, using Python, Java, and modern AI tooling to turn ideas into robust solutions.
+
+          I’m a self-taught learner who thrives on exploring new technologies, solving complex problems, and pushing my skillset forward.
+          Recently, I've expanded into advanced AI approaches — including agentic AI, MCP, and workflow automation - allowing me to build smarter, more adaptive systems that drive real impact.
+                <br /><br />
+                Below are a few selected projects that highlight my interests in
+                data-processing, algorithms, backend engineering, and AI-powered
+                experimentation.
+              </p>
+            </section>
+
+                    <section id="projects" className="section">
+                      <h2 className="section-title">Selected Projects</h2>
+                      <p className="section-intro">
+                        A few projects that showcase how I work with data, algorithms, and
+                        AI tooling.
                       </p>
-                        <div className="hero-actions">
-                          <a className="btn btn-primary" href="#projects">
-                            View selected projects
+
+                      <div className="projects-grid">
+              {projects.map((project) => (
+                <article key={project.title} className="project-card">
+                  {project.image && (
+                    <div className="project-media">
+                      <img
+                        src={project.image}
+                        alt={project.imageAlt || project.title}
+                        className="project-image"
+                      />
+                    </div>
+                  )}
+
+                  <div>
+                    {/* <h3 className="project-title">{project.title}</h3> */}
+                    <div className="project-header">
+                      <h3 className="project-title">{project.title}</h3>
+                        {project.status && (
+                          <span className="project-badge">{project.status}</span>
+                        )}
+                    </div>
+                    <p className="project-description">{project.description}</p>
+                    <ul className="project-tags">
+                      {project.tech.map((tag) => (
+                        <li key={tag}>{tag}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="project-links">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                    >
+                      View on GitHub ↗
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+                    </section>
+
+                    <section id="skills" className="section section-alt">
+                      <h2 className="section-title">Skills & Focus Areas</h2>
+                      <p className="section-intro">
+                        I combine backend, data, and AI tools to build practical solutions.
+                      </p>
+                      <ul className="skills-list">
+                        {skills.map((skill) => (
+                          <li key={skill} className="skill-badge">
+                            {skill}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                    
+                    <section id="resume" className="section">
+    <h2 className="section-title">Resume</h2>
+    <p className="section-intro">
+      A detailed overview of my professional background, technical expertise, and industry experience.
+    </p>
+
+    <div className="resume-grid">
+
+      {/* LEFT COLUMN — SUMMARY + SKILLS + CONTACT */}
+      <div className="resume-column">
+
+        {/* Professional Summary */}
+        <div className="resume-card">
+          <h3 className="resume-heading">Professional Summary</h3>
+          <p className="resume-text">
+            Senior Backend Architect & Technical Lead with 15+ years of experience engineering scalable,
+            cloud-native distributed systems. Expert in Microservices, Event-Driven Architecture, and Data Engineering. 
+            Proven track record in the Security (SOAR) and AI domains, leading cross-functional teams to deliver
+            critical infrastructure. Experienced in optimizing cloud lifecycles, reducing costs by 70%, and driving 
+            engineering excellence in high-paced environments.
+          </p>
+        </div>
+
+        {/* Technical Skills */}
+        <div className="resume-card">
+          <h3 className="resume-heading">Technical Skills</h3>
+
+          <h4 className="resume-subheading">Architecture</h4>
+          <ul className="resume-list">
+            <li>Microservices, Event-Driven Design, Serverless</li>
+            <li>Distributed Systems, REST APIs, High Availability</li>
+            <li>Data Modeling, System Design</li>
+          </ul>
+
+          <h4 className="resume-subheading">Cloud & DevOps</h4>
+          <ul className="resume-list">
+            <li>Azure DevOps, AWS (Lambda, EC2, IAM, Step Functions)</li>
+            <li>Docker, Kubernetes, Terraform (IaC)</li>
+            <li>CI/CD (Jenkins, GitHub Actions)</li>
+          </ul>
+
+          <h4 className="resume-subheading">Languages</h4>
+          <ul className="resume-list">
+            <li>Python, Golang, C++, Java, SQL</li>
+          </ul>
+
+          <h4 className="resume-subheading">Data & Databases</h4>
+          <ul className="resume-list">
+            <li>Postgres, MySQL, MSSQL, DynamoDB</li>
+            <li>Kafka, Stream Processing, ETL/ELT Pipelines, Data Lakes</li>
+          </ul>
+
+          <h4 className="resume-subheading">Security</h4>
+          <ul className="resume-list">
+            <li>SOAR Systems, Secrets Management, Zero Trust principles</li>
+            <li>Monitoring & Alerting</li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div className="resume-card resume-contact">
+          <h3 className="resume-heading">Contact</h3>
+          <p className="resume-text">
+            <strong>Email:</strong> yonatan.harel@mail.com<br />
+            {/* <strong>Phone:</strong> 0585-705622<br /> */}
+            <strong>GitHub:</strong>{" "}
+            <a href="https://github.com/YonatanHarel" target="_blank" rel="noreferrer" className="resume-link">
+              github.com/YonatanHarel
+            </a>
+            <br />
+            <strong>LinkedIn:</strong>{" "}
+            <a href="LINKEDIN_URL" target="_blank" rel="noreferrer" className="resume-link">
+              LinkedIn Profile
+            </a>
+          </p>
+        </div>
+      </div>
+
+      {/* RIGHT COLUMN — EXPERIENCE + EDUCATION */}
+      <div className="resume-column">
+
+        {/* Experience */}
+        <div className="resume-card">
+          <h3 className="resume-heading">Professional Experience</h3>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">CITADEL CONSULTING LTD. | Software Architect / Technical Lead</span>
+              <span className="resume-item-dates">Jul 2023 – Jan 2025</span>
+            </div>
+            <ul className="resume-list">
+              <li>Architected a comprehensive SOAR platform, leading the lifecycle from requirement definition to production.</li>
+              <li>Designed resilient cloud architectures aligned with Well-Architected principles.</li>
+              <li>Improved operational efficiency via automation and modern engineering practices.</li>
+              <li>Mentored engineering teams and established secure coding standards.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">SKF AI | Software Architect / Technical Lead</span>
+              <span className="resume-item-dates">Apr 2022 – Jul 2023</span>
+            </div>
+            <ul className="resume-list">
+              <li>Led migration from monolithic systems to cloud microservices, reducing infra cost by 70%.</li>
+              <li>Designed the Industrial Data Platform (IDP) enabling large-scale analytics.</li>
+              <li>Introduced Golang for high-performance backend services.</li>
+              <li>Improved production reliability by introducing automated testing and reviews.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">SKF AI | Senior Software Developer</span>
+              <span className="resume-item-dates-inline">Jun 2021 – Apr 2022</span>
+            </div>
+            <ul className="resume-list">
+              <li>Designed scalable ETL/ELT data pipelines for industrial analytics.</li>
+              <li>Developed Terraform IaC for consistent cloud provisioning.</li>
+              <li>Collaborated on data lake design for storage optimization.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">RAFAEL | Autonomous Systems Developer</span>
+              <span className="resume-item-dates-inline">Jul 2019 – Jun 2021</span>
+            </div>
+            <ul className="resume-list">
+              <li>Built real-time C/C++ flight control software for tactical weapon systems.</li>
+              <li>Developed diagnostic tools for performance analysis.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">TADIAD | Lead Developer</span>
+              <span className="resume-item-dates-inline">Dec 2017 – May 2018</span>
+            </div>
+            <ul className="resume-list">
+              <li>Led a development team delivering business-critical features.</li>
+            </ul>
+          </div>
+
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">WONDERLOGIX | Software Developer</span>
+              <span className="resume-item-dates-inline">May 2016 – Dec 2017</span>
+            </div>
+            <ul className="resume-list">
+              <li>Developed an industrial automation design tool, delivering the MVP end-to-end.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">AMDOCS LTD. | Software Developer</span>
+              <span className="resume-item-dates-inline">Aug 2014 – May 2016</span>
+            </div>
+            <ul className="resume-list">
+              <li>Developed enterprise CRM systems in Java.</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <span className="resume-item-title">SAP | Development Intern & Engineer</span>
+              <span className="resume-item-dates-inline">Aug 2009 – Jan 2014</span>
+            </div>
+            <ul className="resume-list">
+              <li>Developed C++ components in the Master Data Management (MDM) group.</li>
+              <li>Gained deep experience with enterprise software lifecycles and QA.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Education */}
+        <div className="resume-card">
+          <h3 className="resume-heading">Education</h3>
+
+          <div className="resume-item">
+            <span className="resume-item-title">MBA </span>
+            <span className="resume-item-subtitle">Open University of Israel</span>
+          </div>
+
+          <div className="resume-item">
+            <span className="resume-item-title">B.Sc. Computer Science & Information Systems  </span>
+            <span className="resume-item-subtitle">University of Haifa</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+                    <section id="contact" className="section">
+                      <h2 className="section-title">Contact</h2>
+                      <p className="section-intro">
+                        Interested in collaborating, have a question about one of my
+                        projects, or just want to say hi?
+                      </p>
+
+                      <div className="contact-box">
+                        <p>
+                          You can reach me via email or explore more of my work on GitHub.
+                        </p>
+                        <div className="contact-actions">
+                          <a className="btn btn-primary" href="mailto:yonatan.harel@mail.com">
+                            Email me
                           </a>
                           <a
                             className="btn btn-ghost"
@@ -120,308 +431,27 @@
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Visit my GitHub
+                            GitHub Profile
                           </a>
-                          <a
-                          className="btn btn-ghost linkedin-btn"
-                          href="https://www.linkedin.com/in/yonatan-harel"
-                          target="_blank"
-                          rel="noreferrer"
-                        ><LinkedInIcon />LinkedIn
-                        </a>
                         </div>
-                    </div>
-                    </div>
-                </header>
+                        {/* <p className="contact-note">
+                          (Replace <code>you@example.com</code> with your real address in
+                          the code.)
+                        </p> */}
+                      </div>
+                    </section>
+                  </main>
 
-                <main>
-                  <section id="intro" className="section section-alt">
-            <h2 className="section-title">Introduction</h2>
-            <p className="section-intro" style={{ maxWidth: "750px", margin: "0 auto" }}>
-            I'm a software developer passionate about building clean, scalable, and data-driven systems.
-        My work centers on backend engineering, data pipelines, and platform development, using Python, Java, and modern AI tooling to turn ideas into robust solutions.
-
-        I’m a self-taught learner who thrives on exploring new technologies, solving complex problems, and pushing my skillset forward.
-        Recently, I've expanded into advanced AI approaches — including agentic AI, MCP, and workflow automation - allowing me to build smarter, more adaptive systems that drive real impact.
-              <br /><br />
-              Below are a few selected projects that highlight my interests in
-              data-processing, algorithms, backend engineering, and AI-powered
-              experimentation.
-            </p>
-          </section>
-
-                  <section id="projects" className="section">
-                    <h2 className="section-title">Selected Projects</h2>
-                    <p className="section-intro">
-                      A few projects that showcase how I work with data, algorithms, and
-                      AI tooling.
+                  <footer className="footer">
+                    <p>
+                      © {new Date().getFullYear()} Yonatan Harel. Built with React and
+                      deployed via GitHub Pages.
                     </p>
-
-                    <div className="projects-grid">
-            {projects.map((project) => (
-              <article key={project.title} className="project-card">
-                {project.image && (
-                  <div className="project-media">
-                    <img
-                      src={project.image}
-                      alt={project.imageAlt || project.title}
-                      className="project-image"
-                    />
-                  </div>
-                )}
-
-                <div>
-                  {/* <h3 className="project-title">{project.title}</h3> */}
-                  <div className="project-header">
-                    <h3 className="project-title">{project.title}</h3>
-                      {project.status && (
-                        <span className="project-badge">{project.status}</span>
-                      )}
-                  </div>
-                  <p className="project-description">{project.description}</p>
-                  <ul className="project-tags">
-                    {project.tech.map((tag) => (
-                      <li key={tag}>{tag}</li>
-                    ))}
-                  </ul>
+                  </footer>
+                  <BackToTop />
                 </div>
+              );
+            }
 
-                <div className="project-links">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                  >
-                    View on GitHub ↗
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-                  </section>
-
-                  <section id="skills" className="section section-alt">
-                    <h2 className="section-title">Skills & Focus Areas</h2>
-                    <p className="section-intro">
-                      I combine backend, data, and AI tools to build practical solutions.
-                    </p>
-                    <ul className="skills-list">
-                      {skills.map((skill) => (
-                        <li key={skill} className="skill-badge">
-                          {skill}
-                        </li>
-                      ))}
-                    </ul>
-                  </section>
-                  
-                  <section id="resume" className="section">
-                    <h2 className="section-title">Resume</h2>
-                    <p className="section-intro">
-                      A concise overview of my background, experience, and education.
-                    </p>
-
-                    <div className="resume-grid">
-                      {/* Left column – Summary & Contact */}
-                      <div className="resume-column">
-                        <div className="resume-card">
-                          <h3 className="resume-heading">Summary</h3>
-                          <p className="resume-text">
-                            Software developer with a strong interest in data processing,
-                            backend systems, and AI/agentic architectures. Experienced
-                            with Python, Java, and modern tooling around large language
-                            models and automation. Curious, detail-oriented, and focused
-                            on writing clear, maintainable code.
-                          </p>
-                        </div>
-
-                        <div className="resume-card">
-                          <h3 className="resume-heading">Core Skills</h3>
-                          <ul className="resume-list">
-                            <li>Python, Java, JavaScript / TypeScript</li>
-                            <li>Data processing, ETL, Pandas, NumPy</li>
-                            <li>REST APIs, backend services</li>
-                            <li>Agentic AI, LLM orchestration, OpenAI SDK</li>
-                            <li>Testing, debugging, and performance awareness</li>
-                          </ul>
-                        </div>
-
-                        <div className="resume-card">
-                          <h3 className="resume-heading">Contact</h3>
-                          <p className="resume-text">
-                            <strong>Email:</strong> yonatan.harel@mail.com
-                            <br />
-                            <strong>GitHub:</strong>{" "}
-                            <a
-                              href="https://github.com/YonatanHarel"
-                              target="_blank"
-                              rel="noreferrer"
-                              className="resume-link"
-                            >
-                              github.com/YonatanHarel
-                            </a>
-                          </p>
-                          <p className="resume-note">
-                            (yonatan.harel@mail.com)
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* Right column – Experience & Education */}
-                      <div className="resume-column">
-                        <div className="resume-card">
-                          <h3 className="resume-heading">Experience</h3>
-
-                          <div className="resume-item">
-                            <div className="resume-item-header">
-                              <span className="resume-item-title">
-                                Software Projects & Self-Driven Learning
-                              </span>
-                              <span className="resume-item-dates">
-                                20XX – Present
-                              </span>
-                            </div>
-                            <p className="resume-item-subtitle">
-                              Personal projects in data processing, algorithms, and AI.
-                            </p>
-                            <ul className="resume-list">
-                              <li>
-                                Built <strong>HealthCare</strong> data project using
-                                Python, Pandas, Pydantic, and NumPy to explore and clean
-                                healthcare datasets.
-                              </li>
-                              <li>
-                                Implemented <strong>External Sort</strong> in Java and
-                                Python to handle large datasets that do not fit into
-                                memory.
-                              </li>
-                              <li>
-                                Experimented with <strong>Agentic AI</strong> setups using
-                                the OpenAI SDK, CrewAI, Syncio and related tools while
-                                following agentic AI engineering best practices.
-                              </li>
-                            </ul>
-                          </div>
-
-                          {/* הוסף כאן ניסיון עבודה אמיתי כשיהיה */}
-                          <div className="resume-item resume-item-placeholder">
-                            <div className="resume-item-header">
-                              <span className="resume-item-title">
-                                [Your Job Title / Role]
-                              </span>
-                              <span className="resume-item-dates">
-                                [Dates, e.g. 2023 – Present]
-                              </span>
-                            </div>
-                            <p className="resume-item-subtitle">[Company / Organization]</p>
-                            <ul className="resume-list">
-                              <li>[Responsibility or achievement #1]</li>
-                              <li>[Responsibility or achievement #2]</li>
-                              <li>[Responsibility or achievement #3]</li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div className="resume-card">
-                          <h3 className="resume-heading">Education</h3>
-
-                          <div className="resume-item">
-                            <div className="resume-item-header">
-                              <span className="resume-item-title">
-                                [Degree / Program Name]
-                              </span>
-                              <span className="resume-item-dates">
-                                [Years, e.g. 2019 – 2023]
-                              </span>
-                            </div>
-                            <p className="resume-item-subtitle">
-                              [University / College / Bootcamp]
-                            </p>
-                            <p className="resume-text">
-                              Short description of your studies, areas of focus, or
-                              notable projects.
-                            </p>
-                          </div>
-
-                          <div className="resume-item">
-                            <div className="resume-item-header">
-                              <span className="resume-item-title">
-                                The Complete Agentic AI Engineering Course
-                              </span>
-                              <span className="resume-item-dates">
-                                Udemy – Ed Donner
-                              </span>
-                            </div>
-                            <p className="resume-text">
-                              Followed a hands-on course on agentic AI engineering,
-                              including building multi-step agents, tool use, and
-                              orchestration patterns with LLMs.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Optional: Add a PDF download button once you have a file */}
-                    <div className="resume-download">
-                      <p className="resume-note">
-                        Once you have a PDF version of your CV, you can place it in the
-                        project (for example under <code>public/cv.pdf</code>) and link it
-                        here:
-                      </p>
-                      <a
-                        className="btn btn-ghost"
-                        href="/cv.pdf"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Download CV (PDF)
-                      </a>
-                    </div>
-                  </section>
-
-                  <section id="contact" className="section">
-                    <h2 className="section-title">Contact</h2>
-                    <p className="section-intro">
-                      Interested in collaborating, have a question about one of my
-                      projects, or just want to say hi?
-                    </p>
-
-                    <div className="contact-box">
-                      <p>
-                        You can reach me via email or explore more of my work on GitHub.
-                      </p>
-                      <div className="contact-actions">
-                        <a className="btn btn-primary" href="mailto:yonatan.harel@mail.com">
-                          Email me
-                        </a>
-                        <a
-                          className="btn btn-ghost"
-                          href="https://github.com/YonatanHarel"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          GitHub Profile
-                        </a>
-                      </div>
-                      {/* <p className="contact-note">
-                        (Replace <code>you@example.com</code> with your real address in
-                        the code.)
-                      </p> */}
-                    </div>
-                  </section>
-                </main>
-
-                <footer className="footer">
-                  <p>
-                    © {new Date().getFullYear()} Yonatan Harel. Built with React and
-                    deployed via GitHub Pages.
-                  </p>
-                </footer>
-                <BackToTop />
-              </div>
-            );
-          }
-
-          
-          export default App;
+            
+            export default App;
