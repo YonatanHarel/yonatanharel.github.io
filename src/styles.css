@@ -545,7 +545,7 @@ body {
 
 /* Responsive */
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -574,6 +574,99 @@ body {
   
   .linkedin-btn:hover {
     background: rgba(59, 130, 246, 0.2);
+  } */
+  
+  /* ---------- Mobile layout ---------- */
+@media (max-width: 768px) {
+  .hero-photo img {
+    width: 140px;     /* קצת יותר קטן */
+    height: 140px;
+    max-width: 100%;
   }
   
+  body {
+    padding: 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 1.5rem 1.2rem 2.2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-inline: 1.2rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-content {
+    flex-direction: column;      /* תמונה מעל הטקסט */
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero-left {
+    order: 1;
+  }
+
+  .hero-right {
+    order: 2;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .section {
+    padding: 2rem 1.2rem 2.4rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;  /* כרטיס אחד בשורה */
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;  /* עמודה אחת */
+    gap: 1.5rem;
+  }
+
+  .resume-column {
+    gap: 1rem;
+  }
+
+  .contact-box {
+    margin-inline: 0;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
 }
