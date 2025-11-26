@@ -462,7 +462,7 @@
 
                   <footer className="footer">
                     <p>
-                      © {new Date().getFullYear()} Yonatan Harel. Built with React and
+                      © {new Date().getFullYear()} Designed by Yonatan Harel, Developed by AI. Built with React and
                       deployed via GitHub Pages.
                     </p>
                   </footer>
