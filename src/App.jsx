@@ -109,9 +109,8 @@
                           I enjoy solving problems at the intersection of{" "}
                           <strong>software engineering</strong>,{" "}
                           <strong>data processing</strong>, and{" "}
-                          <strong>AI/agentic systems</strong>. I like building clear,
-                          maintainable solutions and experimenting with new tools and
-                          architectures.
+                          <strong>AI/agentic systems</strong>.<br></br>
+                          Building clear,maintainable solutions and experimenting with new tools and architectures with "Keep It Simple" attitude is my passion.
                         </p>
                           <div className="hero-actions">
                             <a className="btn btn-primary" href="#projects">
