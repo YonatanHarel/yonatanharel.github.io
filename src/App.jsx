@@ -84,7 +84,6 @@
                         <a href="#projects">Projects</a>
                         <a href="#skills">Skills</a>
                         <a href="#resume">Resume</a>
-                        <a href="#contact">Contact</a>
                         <a
                           href="https://github.com/YonatanHarel"
                           target="_blank"
@@ -92,6 +91,7 @@
                         >
                           GitHub
                         </a>
+                        <a href="#contact">Contact</a>
                       </div>
                     </nav>
 
